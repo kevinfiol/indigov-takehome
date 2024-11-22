@@ -30,7 +30,7 @@ npm run start
 
 The frontend will be accessible at `localhost:8080` by default; the port can be configured in `.env`.
 
-The following API endpoint will be accessible:
+The following API endpoints will be accessible:
 ```
 # returns all constituents in JSON
 GET /constituents
