@@ -10,12 +10,17 @@ and it is very important to them that any duplicates are merged during the conta
 
 ## Running the application
 
+Node v22 is required.
+
 ```bash
-# init the SQLite DB
-npm run db:init
+# install dependencies
+npm install
 
 # (optional) create an .env file
 cp .env.example .env
+
+# init the SQLite DB
+npm run init:db
 
 # run the application
 npm run start
