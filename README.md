@@ -35,6 +35,9 @@ The following API endpoints will be accessible:
 # returns all constituents in JSON
 GET /constituents
 
+# constituent form submission
+POST /constituents
+
 # returns a CSV of constituents
 GET /constituents/export
 ```
