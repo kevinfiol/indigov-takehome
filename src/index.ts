@@ -49,4 +49,8 @@ app.post('/constituents', async (c) => {
   return c.json({ data });
 });
 
-serve({ fetch: app.fetch, port: PORT });
+const server = serve({ fetch: app.fetch, port: PORT });
+
+server.on('listening', () => {
+  console.log(`Running on http://localhost:${PORT}`);
+});
