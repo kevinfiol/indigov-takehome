@@ -26,6 +26,23 @@ npm run init:db
 npm run start
 ```
 
+## Accessing the application
+
+The frontend will be accessible at `localhost:8080` by default; the port can be configured in `.env`.
+
+The following API endpoint will be accessible:
+```
+# returns all constituents in JSON
+GET /constituents
+
+# returns a CSV of constituents
+GET /constituents/export
+```
+
+The CSV endpoint can be filtered using the `begin` and `end` query parameters.
+
+For example, `/constituents/export?begin=2018-01-01&end=2021-12-12` will return all constituents with signup times between January 1st, 2018 and December 12th, 2021.
+
 ## Development
 
 Currently, the server and frontend use separate dev scripts.
