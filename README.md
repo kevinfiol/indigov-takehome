@@ -26,7 +26,7 @@ npm run start
 Currently, the server and frontend use separate dev scripts.
 
 ```bash
-# typecheck the source
+# typecheck the server
 npm run check
 
 # start server in dev mode
