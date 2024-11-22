@@ -1,7 +1,7 @@
 import Database from 'better-sqlite3';
 import type { Constituent } from './types';
 
-const SQLITE_PATH = process.env.SQLITE_PATH;
+const SQLITE_PATH = process.env.SQLITE_PATH || 'indigov.db';
 
 export const db = new Database(SQLITE_PATH, {
   readonly: false,
