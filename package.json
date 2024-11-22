@@ -1,6 +1,11 @@
 {
   "name": "indigov-assessment",
   "type": "module",
+  "scripts": {
+    "start": "npm run build:client && tsx --env-file-if-exists=.env src/index.ts",
+    "dev": "tsx --watch --env-file=.env src/index.ts",
+    "check": "tsc --noEmit src/index.ts"
+  },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
     "better-sqlite3": "^11.5.0",
