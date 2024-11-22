@@ -4,7 +4,7 @@
   "scripts": {
     "start": "npm run build:client && tsx --env-file-if-exists=.env src/index.ts",
     "dev": "tsx --watch --env-file=.env src/index.ts",
-    "check": "tsc --noEmit src/index.ts",
+    "check": "tsc -p tsconfig.json",
     "init:db": "node --env-file-if-exists=.env scripts/init-db.js",
     "build:client": "esbuild src/client/main.tsx --outfile=src/static/main.js --bundle --minify",
     "dev:client": "esbuild src/client/main.tsx --outfile=src/static/main.js --bundle --watch --sourcemap"
