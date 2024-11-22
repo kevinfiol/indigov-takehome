@@ -1,0 +1,17 @@
+{
+  "name": "indigov-assessment",
+  "type": "module",
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "better-sqlite3": "^11.5.0",
+    "esbuild": "^0.24.0",
+    "hono": "^4.6.11",
+    "preact": "^10.24.3",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.9.1",
+    "typescript": "^5.6.3"
+  }
+}
