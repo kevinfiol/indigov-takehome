@@ -23,7 +23,7 @@ npm run start
 
 ## Development
 
-Currently, the API server and frontend build are separate dev scripts.
+Currently, the server and frontend use separate dev scripts.
 
 ```bash
 # typecheck the source
